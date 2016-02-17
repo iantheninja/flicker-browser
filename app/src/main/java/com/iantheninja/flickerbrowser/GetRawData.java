@@ -38,6 +38,12 @@ enum DownloadStatus { IDLE, PROCESSING, NOT_INITIALIZED, FAILED_OR_EMPTY, OK }
          return data;
      }
 
+     public void execute(){//executes the class code
+         this.downloadStatus = DownloadStatus.PROCESSING;
+         DownloadRawData downloadRawData = new DownloadRawData();
+         downloadRawData.execute(rawUrl);
+     }
+
      public class DownloadRawData extends AsyncTask<String, Void, String>{
 
          protected void onPostExecute(String webData){
