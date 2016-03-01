@@ -4,55 +4,55 @@ package com.iantheninja.flickerbrowser;
  * Created by ian on 01/03/16.
  */
 public class Photo {
-    private String title;
-    private String author;
-    private String authorId;
-    private String link;
-    private String tags;
-    private String image;
+    private String mTitle;
+    private String mAuthor;
+    private String mAuthorId;
+    private String mLink;
+    private String mTags;
+    private String mImage;
 
-    public Photo(String title, String author, String authorId, String link, String tags, String image) {
-        this.title = title;
-        this.author = author;
-        this.authorId = authorId;
-        this.link = link;
-        this.tags = tags;
-        this.image = image;
+    public Photo(String mTitle, String author, String mAuthorId, String mLink, String mTags, String image) {
+        this.mTitle = mTitle;
+        this.mAuthor = author;
+        this.mAuthorId = mAuthorId;
+        this.mLink = mLink;
+        this.mTags = mTags;
+        this.mImage = image;
     }
 
-    public String getTitle() {
-        return title;
+    public String getmTitle() {
+        return mTitle;
     }
 
-    public String getAuthor() {
-        return author;
+    public String getmAuthor() {
+        return mAuthor;
     }
 
-    public String getAuthorId() {
-        return authorId;
+    public String getmAuthorId() {
+        return mAuthorId;
     }
 
-    public String getLink() {
-        return link;
+    public String getmLink() {
+        return mLink;
     }
 
-    public String getTags() {
-        return tags;
+    public String getmTags() {
+        return mTags;
     }
 
-    public String getImage() {
-        return image;
+    public String getmImage() {
+        return mImage;
     }
 
     @Override
     public String toString() {
         return "Photo{" +
-                "title='" + title + '\'' +
-                ", author='" + author + '\'' +
-                ", authorId='" + authorId + '\'' +
-                ", link='" + link + '\'' +
-                ", tags='" + tags + '\'' +
-                ", image='" + image + '\'' +
+                "mTitle='" + mTitle + '\'' +
+                ", mAuthor='" + mAuthor + '\'' +
+                ", mAuthorId='" + mAuthorId + '\'' +
+                ", mLink='" + mLink + '\'' +
+                ", mTags='" + mTags + '\'' +
+                ", mImage='" + mImage + '\'' +
                 '}';
     }
 }
