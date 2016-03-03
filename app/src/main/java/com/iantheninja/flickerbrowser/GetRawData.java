@@ -38,6 +38,10 @@ enum DownloadStatus { IDLE, PROCESSING, NOT_INITIALIZED, FAILED_OR_EMPTY, OK }
          return data;
      }
 
+     public void setRawUrl(String rawUrl) {
+         this.rawUrl = rawUrl;
+     }
+
      public void execute(){//executes the class code
          this.downloadStatus = DownloadStatus.PROCESSING;
          DownloadRawData downloadRawData = new DownloadRawData();
