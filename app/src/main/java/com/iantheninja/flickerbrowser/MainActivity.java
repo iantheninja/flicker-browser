@@ -15,8 +15,10 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        GetRawData getRawData = new GetRawData("https://api.flickr.com/services/feeds/photos_public.gne?tags=android,lollipop&format=json&nojsoncallback=1");
-        getRawData.execute();
+       // GetRawData getRawData = new GetRawData("https://api.flickr.com/services/feeds/photos_public.gne?tags=android,lollipop&format=json&nojsoncallback=1");
+        GetFlickrJsonData jsonData = new GetFlickrJsonData("android, lollipop", true);
+        //getRawData.execute();
+        jsonData.execute();
     }
 
     @Override
