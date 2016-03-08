@@ -10,9 +10,7 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by ian on 01/03/16.
- */
+
 public class GetFlickrJsonData extends GetRawData{
     private String LOG_TAG = GetFlickrJsonData.class.getSimpleName();
     private List<Photo> mPhotos;
@@ -42,7 +40,7 @@ public class GetFlickrJsonData extends GetRawData{
         final String NO_JSON_CALLBACK_PARAM = "nojsoncallback";
 
         mDestinationUri = Uri.parse(FLICKR_API_BASE_URL).buildUpon()
-                .appendQueryParameter(TAGS_PARAM,searchCriteria)
+                .appendQueryParameter(TAGS_PARAM, searchCriteria)
                 .appendQueryParameter(TAGMODE_PARAM, matchAll ? "ALL" : "ANY")
                 .appendQueryParameter(FORMAT_PARAM, "json")
                 .appendQueryParameter(NO_JSON_CALLBACK_PARAM, "1")
