@@ -2,6 +2,7 @@ package com.iantheninja.flickerbrowser;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
@@ -23,10 +24,11 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        // GetRawData getRawData = new GetRawData("https://api.flickr.com/services/feeds/photos_public.gne?tags=android,lollipop&format=json&nojsoncallback=1");
-        GetFlickrJsonData jsonData = new GetFlickrJsonData("android, lollipop", true);
-        //getRawData.execute();
-        jsonData.execute();
+        mRecyclerView = (RecyclerView) findViewById(R.id.recycler_view);
+        mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
+
+        ProcessPhotos processPhotos = new ProcessPhotos("android,lollipop", true);
+        processPhotos.execute();
     }
 
     @Override
