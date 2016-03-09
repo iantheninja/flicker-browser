@@ -8,16 +8,14 @@ import android.view.ViewGroup;
 
 import java.util.List;
 
-/**
- * Created by ian on 08/03/16.
- */
+
 public class FlickrRecyclerViewAdapter extends RecyclerView.Adapter<FlickrImageViewHolder>{
     private List<Photo> mPhotosList;
     private Context mContext;
 
     //constructor
     public FlickrRecyclerViewAdapter(Context context, List<Photo> photosList){
-        mContext = context;
+        this.mContext = context;
         this.mPhotosList = photosList;
     }
 

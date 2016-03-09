@@ -49,6 +49,10 @@ public class GetFlickrJsonData extends GetRawData{
         return mDestinationUri != null;
     }
 
+    public List<Photo> getMPhotos() {
+        return mPhotos;
+    }
+
     //processes the json data being received
     public void processResult(){
         if(getDownloadStatus() != DownloadStatus.OK ){
@@ -108,7 +112,8 @@ public class GetFlickrJsonData extends GetRawData{
         }
 
         protected String doInBackground(String... params){
-            return super.doInBackground(params);
+            String[] par = {mDestinationUri.toString()};
+            return super.doInBackground(par);
         }
     }
 }
