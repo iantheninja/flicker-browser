@@ -4,7 +4,7 @@
     <color name="flickrSecondaryBackgroundColor">@color/blue_700</color>
     <color name="flickrAccentBackgroundColor">@color/pink_500</color>
     <color name="flickrBackgroundColor">@color/grey_600</color>
-    <color name="flickrPrimaryColor">@color/grey_white_1000</color>
-    <color name="flickrSecondaryColor">@color/yellow_500</color>
+    <color name="flickrPrimaryTextColor">@color/grey_white_1000</color>
+    <color name="flickrSecondaryTextColor">@color/yellow_500</color>
 
 </resources>
