@@ -1,6 +1,7 @@
 package com.iantheninja.flickerbrowser;
 
 import android.os.Bundle;
+import android.view.Menu;
 
 public class SearchActivity extends BaseActivity {
 
@@ -21,6 +22,14 @@ public class SearchActivity extends BaseActivity {
 //            }
 //        });
 //        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+    }
+
+    public boolean onCreateOptionsMenu(Menu menu){
+        //inflate the menu - adds items to action bar if present
+        getMenuInflater().inflate(R.menu.menu_search, menu);
+
+        return true;
     }
 
 }
