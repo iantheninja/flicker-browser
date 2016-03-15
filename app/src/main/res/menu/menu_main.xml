@@ -13,6 +13,6 @@
         android:icon="@android:drawable/ic_menu_search"
         android:title="@string/ic_search"
         android:orderInCategory="1"
-        flickr:showAsAction="always"
+        flickr:showAsAction="ifRoom"
         />
 </menu>
