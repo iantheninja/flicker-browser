@@ -37,6 +37,7 @@ public class SearchActivity extends BaseActivity {
         getMenuInflater().inflate(R.menu.menu_search, menu);
         final MenuItem searchItem = menu.findItem(R.id.search_view);
         mSearchView = (SearchView) searchItem.getActionView();
+        //initialize the SearchManager class (which is a service)
         SearchManager searchManager = (SearchManager) getSystemService(Context.SEARCH_SERVICE);
         mSearchView.setSearchableInfo(searchManager.getSearchableInfo(getComponentName()));
         mSearchView.setIconified(false);
