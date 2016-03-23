@@ -49,4 +49,10 @@ public class FlickrRecyclerViewAdapter extends RecyclerView.Adapter<FlickrImageV
         //fuck!!!..ternary operators give mind fucks
         return (null != mPhotosList? mPhotosList.size() : 0);
     }
+
+    public void loadNewData(List<Photo> newPhotos){
+        mPhotosList = newPhotos;
+        notifyDataSetChanged();
+
+    }
 }
