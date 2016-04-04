@@ -47,7 +47,9 @@ public class MainActivity extends BaseActivity {
 
             @Override
             public void onItemLongClick(View view, int position) {
-                Toast.makeText(getBaseContext(), "long press", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(getBaseContext(), ViewPhotoDetailsActivity.class);
+                intent.putExtra(PHOTO_TRANSFER, flickrRecyclerViewAdapter.getPhoto(position));
+                startActivity(intent);
             }
         }));
     }

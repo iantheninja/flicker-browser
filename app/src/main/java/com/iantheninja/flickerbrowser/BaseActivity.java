@@ -8,6 +8,8 @@ import android.support.v7.widget.Toolbar;
  */
 public class BaseActivity extends AppCompatActivity{
     private Toolbar mToolbar;
+
+    public static final String PHOTO_TRANSFER = "PHOTO_TRANSFER";
     public static final String FLICKR_QUERY = "FLICKR_QUERY";
 
     protected Toolbar activateToolbar(){
