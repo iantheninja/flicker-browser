@@ -8,10 +8,10 @@
     android:fitsSystemWindows="true"
     tools:context="com.iantheninja.flickerbrowser.ViewPhotoDetailsActivity">
 
-    <android.support.design.widget.AppBarLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/Theme.Flickr.AppBarOverlay">
+    <!--<android.support.design.widget.AppBarLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:theme="@style/Theme.Flickr.AppBarOverlay">-->
 
         <!--<android.support.v7.widget.Toolbar-->
             <!--android:id="@+id/toolbar"-->
@@ -20,7 +20,7 @@
             <!--android:background="?attr/colorPrimary"-->
             <!--app:popupTheme="@style/Theme.Flickr.PopupOverlay"/>-->
 
-    </android.support.design.widget.AppBarLayout>
+    <!--</android.support.design.widget.AppBarLayout>-->
 
     <include layout="@layout/content_view_photo_details"/>
 
