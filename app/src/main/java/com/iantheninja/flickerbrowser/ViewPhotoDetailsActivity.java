@@ -22,10 +22,10 @@ public class ViewPhotoDetailsActivity extends BaseActivity {
         TextView photoTitle = (TextView) findViewById(R.id.photo_title);
         photoTitle.setText("Title: "+photo.getmTitle());
 
-        TextView photoTags = (TextView) findViewById(R.id.photo_title);
+        TextView photoTags = (TextView) findViewById(R.id.photo_tag);
         photoTags.setText("Tags: "+photo.getmTags());
 
-        TextView photoAuthor = (TextView) findViewById(R.id.photo_title);
+        TextView photoAuthor = (TextView) findViewById(R.id.photo_author);
         photoAuthor.setText(photo.getmAuthor());
 
         ImageView photoImage = (ImageView) findViewById(R.id.photo_image);
